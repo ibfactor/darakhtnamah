@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: "Montserrat";
+}
+
+button {
+	font-family: "Montserrat";
+	font-weight: 500;
+}
+
+.main {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: grayscale(0%) brightness(0.8) blur(2px);
+	transition: 0.2s all;
+}
+
+#m3 video {
+	filter: grayscale(0%) brightness(0.7) blur(8px);
+}
+
+#centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+#centered p {
+	margin-top: 5px;
+}
+.scroll {
+	padding: 15px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: 15px;
+	outline: 2px solid rgba(0, 0, 0, 0.3);
+	transition: 0.2s all;
+}
+.scroll:hover {
+	outline: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.scroll > span {
+	display: inline-block;
+	width: auto;
+	max-width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: 0.2s all;
+	vertical-align: middle;
+}
+#m3 .scroll i {
+	margin-left: -5px;
+	margin-right: 1px;
+	margin-top: 0px;
+	vertical-align: middle;
+}
+
+.scroll:hover > span {
+	max-width: 200px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#m3 .scroll:hover > i {
+	margin: 0;
+}
+#m3 .scroll:hover {
+	border-radius: 15px;
+}
