@@ -47,7 +47,7 @@ video {
 	text-align: center;
 }
 
-h3 {
+#m3 h3, #m2 h3, #m1 h3 {
 	font-size: 40px;
 }
 
@@ -98,3 +98,172 @@ h3 {
 #m3 .scroll:hover {
 	border-radius: 15px;
 }
+
+
+nav {
+	position: fixed;
+	top: -5px;
+	left: 0;
+	width: calc(100% - 30px);
+	padding: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+nav ul {
+	position: absolute;
+	width: calc(100% - 100px);
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: right;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+#potd {
+	margin-top: 80px;
+	padding: 30px;
+	background-color: rgba(0, 54, 43);
+	width: calc(100% - 60px - 30px);
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5px;
+}
+#potd h4 {
+	font-family: "Gulzar";
+}
+#potd img {
+	width: auto;
+	height: 75px;
+	border-radius: 5px;
+	position: absolute;
+	opacity: 0.9;
+}
+#potd p {
+	margin-top: 10px;
+}
+
+#potd h4, #potd h2, #potd h5 {
+	margin-left: 100px;
+}
+
+hr {
+	border: 0.5px solid rgba(255, 255, 255, 0.2);
+	width: calc(90% - 40px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p:not(div p) {
+	padding: 15px;
+}
+
+a:not(nav a) {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+	transition: 0.2s all;
+}
+a:not(nav a):hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#plants_list input {
+	background-color: rgba(50, 50, 50, 0.1);
+	color: white;
+	display: block;
+	padding: 15px;
+	width: calc(100% - 30px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: "Montserrat";
+	transition: 0.2s all;
+}
+
+#plants_list input:focus {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	outline: 0;
+}
+
+#plants_list {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 15px;
+	width: calc(100% - 60px);
+	margin-left: 15px;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.plant_item {
+	position: relative;
+	display: inline-block;
+	width: calc(25% - 15px);
+	height: 15vw;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-top: 10px;
+	margin-right: 10px;
+	user-select: none;
+}
+.plant_item > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	filter: brightness(0.8);
+	transition: all 0.2s;
+}
+.plant_item > p {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+	transition: 0.2s all;
+}
+.plant_item:hover > div {
+	filter: brightness(0.5);
+}
+.plant_item:hover > p {
+	color: white;
+}
+
+
+@media screen and (min-width: 1500px) {
+	.plant_item {
+		width: calc(20% - 15px);
+	}
+}
+@media screen and (max-width: 900px) {
+	.plant_item {
+		width: calc(33.333% - 15px);
+	}
+}
+@media screen and (max-width: 700px) {
+	.plant_item {
+		width: calc(50% - 15px);
+		height: 25vw;
+	}
+}
+@media screen and (max-width: 400px) {
+	.plant_item {
+		font-size: 11px;
+	}
+}
+
