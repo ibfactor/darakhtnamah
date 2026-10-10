@@ -142,7 +142,7 @@ a {
 #potd h4 {
 	font-family: "Gulzar";
 }
-#potd img {
+#potd img:not(.source img) {
 	width: auto;
 	height: 75px;
 	border-radius: 5px;
@@ -168,11 +168,11 @@ p:not(div p) {
 	padding: 15px;
 }
 
-a:not(nav a) {
+a:not(nav a, a:has(img)) {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 	transition: 0.2s all;
 }
-a:not(nav a):hover {
+a:not(nav a, a:has(img)):hover {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -265,5 +265,90 @@ a:not(nav a):hover {
 	.plant_item {
 		font-size: 11px;
 	}
+}
+
+
+
+#potd2 {
+	margin-top: 80px;
+	padding: 30px;
+	background-color: rgba(0, 54, 43);
+	width: calc(100% - 60px - 30px);
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5px;
+	position: relative;
+}
+#potd2 h4 {
+	font-family: "Gulzar";
+}
+#potd2 img:not(.sourcetag img) {
+	width: auto;
+	height: 75px;
+	border-radius: 5px;
+	position: absolute;
+	opacity: 0.9;
+}
+#potd2 p {
+	margin-top: 10px;
+}
+#potd2 > p:nth-of-type(1) a {
+	display: none;
+}
+#potd2 li {
+	list-style: none;
+}
+#potd2 > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	filter: blur(3px) brightness(0.5);
+}
+#potd2 > *:not(div) {
+	position: relative;
+}
+#potd2 > p p:nth-last-of-type(2) {
+	display: none;
+}
+
+#tableObjectList, #tableKey, #efloras_description > span > table {
+	display: none;
+}
+
+
+#efloras_source > img {
+	image-rendering: pixelated;
+	filter: invert(100%) brightness(200%) grayscale(100%);
+}
+#wikipedia_source > img {
+	image-rendering: pixelated;
+	filter: grayscale(100%) brightness(200%) contrast(1000%);
+}
+#useful_source > img {
+	image-rendering: pixelated;
+	filter: grayscale(100%) brightness(300%) invert(100%) brightness(500%);
+}
+#flowers_of_india > img {
+	image-rendering: pixelated;
+	filter: grayscale(100%) invert(100%) contrast(500%) brightness(100%) invert(100%);
+}
+#efloraofindia > img {
+	image-rendering: pixelated;
+	background-color: white;
+	filter: invert(100%) grayscale(100%) brightness(100%);
+}
+#biodiversity_india > img {
+	image-rendering: pixelated;
+	filter: invert(100%) grayscale(100%) brightness(150%) contrast(100%);
+}
+
+.sourcetag img {
+	width: 145px;
+	height: auto;
+	border-radius: 5px;
 }
 
