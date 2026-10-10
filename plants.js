@@ -2256,7 +2256,7 @@ function search() {
         }
         
         document.getElementById("rslt").innerHTML +=
-            `<div class="plant_item" onclick="location.href='/plant?g=${rvlnt.result.split(" ")[0]}&s=${rvlnt.result.split(" ")[1]}';">
+            `<div class="plant_item" onclick="location.href='/plant?g=${rlvnt.result.split(" ")[0]}&s=${rlvnt.result.split(" ")[1]}';">
                 <div style="background-image:url(/plant_images/${plant.split("/")[0].replaceAll(" ", "%20")}.jpeg);"></div>
                 <p>
                     ${plant.split("/")[0]}<br>
