@@ -1,3 +1,1526 @@
+const maps = [
+  {
+    "Scientific Taxon": "Abelmoschus ficulneus",
+    "Name in Latin Script": "Jangli Bhindi / Deola",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "1",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Abrus precatorius",
+    "Name in Latin Script": "Ratti",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Abutilon indicum",
+    "Name in Latin Script": "Kanghi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "1",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Aegle marmelos",
+    "Name in Latin Script": "Bael Patra",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Albizia lebbeck",
+    "Name in Latin Script": "Kaala Sharinh / Kaala Siris",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "1",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Albizia odoratissima",
+    "Name in Latin Script": "Lasre /Lasrin",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "25",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Barleria cristata",
+    "Name in Latin Script": "Tadrelu",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "1",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Bauhinia purpurea",
+    "Name in Latin Script": "Kaniar /Khairwal /Koliar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "17",
+    "Distribution": "1",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Bauhinia racemosa",
+    "Name in Latin Script": "Tour /Aapta /Jhinjeri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Boehmeria virgata",
+    "Name in Latin Script": "Paliara",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Bombax ceiba",
+    "Name in Latin Script": "Sumbal /Simal",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "25",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Boswellia Serrata",
+    "Name in Latin Script": "Salai",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Butea Monosperma",
+    "Name in Latin Script": "Dhak /Chichera /Palash",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Cajanus cajan",
+    "Name in Latin Script": "Arhar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Carissa spinarum",
+    "Name in Latin Script": "Garna/ Jangli Karonda ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "1",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Casearia tomentosa",
+    "Name in Latin Script": "Chilla /Bheri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "8",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Cassia fistula",
+    "Name in Latin Script": "Amaltas",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Celastrus paniculatus",
+    "Name in Latin Script": "Kangni /Sankhu ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Celtis australis",
+    "Name in Latin Script": "Batkarar /Kar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Colebrookia oppo / پوہsitifolia",
+    "Name in Latin Script": "Shakkardana",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Crateva religiosa",
+    "Name in Latin Script": "Barna ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Dendrocalamus strictus",
+    "Name in Latin Script": "Desi Baans",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Diospyros montana",
+    "Name in Latin Script": "Kendu",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Ehretia acuminata",
+    "Name in Latin Script": "Pania /Puna",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Erythrina suberosa",
+    "Name in Latin Script": "Gul-e-nishtar /Dauldhak",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "18",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Ficus benghalensis",
+    "Name in Latin Script": "Bohar /Bargad",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "22",
+    "Distribution": "1",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Ficus racemosa",
+    "Name in Latin Script": "Gular",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "25",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Ficus virens",
+    "Name in Latin Script": "Pilkhan /Man /Palakh",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "17",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Flacourtia indica",
+    "Name in Latin Script": "Kandai /Kangu /Kokoh",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "1",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Gmelina arborea",
+    "Name in Latin Script": "Gamhar /Kumbar /Phakra",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Helicteres isora",
+    "Name in Latin Script": "Marorphali",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "1",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Holoptelea integrifolia",
+    "Name in Latin Script": "Rajain / Chudel Papdi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Hymenodictyon orixense",
+    "Name in Latin Script": "Bhaulan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "17",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Lagerstroemia indica",
+    "Name in Latin Script": "Savni /Gul e Dasta",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Lannea coromandelica",
+    "Name in Latin Script": "Mohin /Jhingan /Kamlai",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "1",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Limonia acidissima",
+    "Name in Latin Script": "Kaith Bael /Bilan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "9",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Madhuca longifolia",
+    "Name in Latin Script": "Mohua /Mahua",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "17",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Mallotus philippensis",
+    "Name in Latin Script": "Kamila /Raini",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Mangifera indica",
+    "Name in Latin Script": "Desi Amb /Aam",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Mitragyna parvifolia",
+    "Name in Latin Script": "Desi Kadamb /Kaim",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "25",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Morus alba",
+    "Name in Latin Script": "Desi Toot /Safed Toot",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "16",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Murraya koenigii",
+    "Name in Latin Script": "Karhi patta /Gandhela",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Murraya paniculata",
+    "Name in Latin Script": "Kaamni /Murva",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Nyctanthes arbor-tristis",
+    "Name in Latin Script": "Harsinghar /Kuri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "1",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Otostegia limbata",
+    "Name in Latin Script": "Awani",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Phanera vahlii",
+    "Name in Latin Script": "Mahul /Taur",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Dry Stone"
+  },
+  {
+    "Scientific Taxon": "Phyllanthis emblica",
+    "Name in Latin Script": "Aamla",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "18",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Po / پوہngamia pinnata",
+    "Name in Latin Script": "Sukh Chain /Charr",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "23",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Stone"
+  },
+  {
+    "Scientific Taxon": "Premna mollissima",
+    "Name in Latin Script": "Gun /Ganhila",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Prunus cerasifera",
+    "Name in Latin Script": "Jangli Alooubukhara ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Putranjiva roxburghii",
+    "Name in Latin Script": "Putjan /Putranjan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "13",
+    "Distribution": "1",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Salix tetrasperma",
+    "Name in Latin Script": "Baid e Laila",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "1",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Sapindus mukorossi",
+    "Name in Latin Script": "Reetha",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Schleichera Oleosa",
+    "Name in Latin Script": "Kasumbh /Gausam",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "1",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Senegalia catechu",
+    "Name in Latin Script": "Katha /Khair",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Senegalia rugata",
+    "Name in Latin Script": "Shikakai",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Syzygium cumini",
+    "Name in Latin Script": "Jaman /Jamun",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "1",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Terminalia anogeissiana",
+    "Name in Latin Script": "Dhao /Chall /Dhavda",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "1",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Terminalia arjuna",
+    "Name in Latin Script": "Arjun /Arjan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Stone"
+  },
+  {
+    "Scientific Taxon": "Terminalia bellirica",
+    "Name in Latin Script": "Bahera",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "35",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Terminalia chebula",
+    "Name in Latin Script": "Harrar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "1",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Terminalia pendula",
+    "Name in Latin Script": "Dokara",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Toona ciliata",
+    "Name in Latin Script": "Toon",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "35",
+    "Distribution": "1",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Triumfetta rhomboidea",
+    "Name in Latin Script": "Chikti",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "1",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Vachellia leucophloea",
+    "Name in Latin Script": "Reru / Reonj",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "25",
+    "Distribution": "1",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Wendlandia heynei",
+    "Name in Latin Script": "Pansara",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "1",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Wrightia arborea",
+    "Name in Latin Script": "Dodi /Khalawa",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "1",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Ocimum tenuiflorum",
+    "Name in Latin Script": "Tulsi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "1",
+    "Fruiting": "Year Round",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Achyranthes aspera",
+    "Name in Latin Script": "Puth Kanda",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Aerva javanica",
+    "Name in Latin Script": "Bui Kaltan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Alhagi maurorum",
+    "Name in Latin Script": "Janasa",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Azadirachta indica",
+    "Name in Latin Script": "Nimm /Neem",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "17",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Bauhinia variegata",
+    "Name in Latin Script": "Kachnaar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "13",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Buxus papillosa",
+    "Name in Latin Script": "Pappar /Shamshad",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Calotropis gigantea",
+    "Name in Latin Script": "Waddi Aak /Bari Aak",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Calotropis procera",
+    "Name in Latin Script": "Aak  /Madar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Capparis decidua",
+    "Name in Latin Script": "Karir",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Capparis sepiaria",
+    "Name in Latin Script": "Hees /Kantod /Hingarna ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Carissa carandas",
+    "Name in Latin Script": "Karonda",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Cenchrus ciliaris",
+    "Name in Latin Script": "Anjan /Dhaman",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Clerodendrum phlomidis",
+    "Name in Latin Script": "Arni",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Cocculus pendulus",
+    "Name in Latin Script": "Dusri/ Vehri/ Parwatti ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Cordia dichotoma",
+    "Name in Latin Script": "Lasuri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Cordia myxa",
+    "Name in Latin Script": "Lasura",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "8",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Crotalaria burhia",
+    "Name in Latin Script": "Sanio",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Cymbopo / پوہgon jwarancusa",
+    "Name in Latin Script": "Lamjak /Khavi /Rusa",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Dalbergia sissoo",
+    "Name in Latin Script": "Desi Taalhi /Shisham",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Datura metel",
+    "Name in Latin Script": "Dhattura",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Dodonaea viscosa",
+    "Name in Latin Script": "Mehndarh /Sanatha",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Ehretia laevis",
+    "Name in Latin Script": "Chamrod ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "9",
+    "Distribution": "2",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Ficus palmata",
+    "Name in Latin Script": "Phagwara /Jangli Anjeer",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Ficus religiosa",
+    "Name in Latin Script": "Pippal /Pipli /Peepal",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "18",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Flueggea virosa",
+    "Name in Latin Script": "Girthan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Grewia asiatica",
+    "Name in Latin Script": "Falsa",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "8",
+    "Distribution": "2",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Grewia tenex",
+    "Name in Latin Script": "Jangli Falsa /Garna ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Haloxylon stocksii",
+    "Name in Latin Script": "Khar /Barilla /Sajji",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Indigofera argentea",
+    "Name in Latin Script": "Leel /Neel",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Jasminum sambac",
+    "Name in Latin Script": "Motia ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Justicia adhatoda",
+    "Name in Latin Script": "Adusa /Basuti /Kander",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Lasiurus scindicus",
+    "Name in Latin Script": "Gorkah",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Lawsonia inermis",
+    "Name in Latin Script": "Mehndi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Leptadenia pyrotechnica",
+    "Name in Latin Script": "Khipp /Kipp",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Melia azedarach",
+    "Name in Latin Script": "Bakain /Draik",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "12",
+    "Distribution": "2",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Moringa oleifera",
+    "Name in Latin Script": "Mitha Sohanjna /Sehjan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Nannorrhops Ritchiana",
+    "Name in Latin Script": "Mazri /Pathha",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Nerium oleander",
+    "Name in Latin Script": "Kaner",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Olea europaea",
+    "Name in Latin Script": "Kao /Kahu /Jangli Zaitoon",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Phoenix dactylifera",
+    "Name in Latin Script": "Aseel Khajoor",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "30",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Phoenix sylvestris",
+    "Name in Latin Script": "Khajji Khajoor /Jangli Khajoor",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "12",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Po / پوہpulus euphratica",
+    "Name in Latin Script": "Bhani",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "2",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Prosopis cineraria",
+    "Name in Latin Script": "Jand /Shammi /Khejri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Punica granatum",
+    "Name in Latin Script": "Anaar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Rauvolfia serpentina",
+    "Name in Latin Script": "Asrol /Chhota Chand",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Ricinus communis",
+    "Name in Latin Script": "Arand /Rind",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "8",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Salvadora oleoides",
+    "Name in Latin Script": "Vann /Khara Jaal /Khabbar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "8",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Senegalia modesta",
+    "Name in Latin Script": "Phulai",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Sesbania bispinosa",
+    "Name in Latin Script": "Jantar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Sesbania sesban",
+    "Name in Latin Script": "Manjhli /Jhinjin",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Sida cordifolia",
+    "Name in Latin Script": "Kherenti",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Solanum virginianum",
+    "Name in Latin Script": "Kateri",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Suaeda fruticosa",
+    "Name in Latin Script": "Laana /Laani",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Tamarix aphylla",
+    "Name in Latin Script": "Farash /Pilchi /Farwan /Tulha",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "15",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Tamarix dioica",
+    "Name in Latin Script": "Tanbachi  /Khaggal",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Tamarix indica",
+    "Name in Latin Script": "Jhao /Lai",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Tecomella undulata",
+    "Name in Latin Script": "Roheda /Lahura",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "2",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Tephrosia purpurea",
+    "Name in Latin Script": "Jhojru",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Urena lobata",
+    "Name in Latin Script": "Bachita /Jhinjhora",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Vachellia jacquemontii",
+    "Name in Latin Script": "Bawli ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Vachellia nilotica",
+    "Name in Latin Script": "Desi Kikar /Babul",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "20",
+    "Distribution": "2",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Vitex negundo",
+    "Name in Latin Script": "Sambhaloo /Banna /Nirgud",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "2",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Withania coagulans",
+    "Name in Latin Script": "Khamjaria /Panirband",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Withania somnifera",
+    "Name in Latin Script": "Aksan",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "2",
+    "Fruiting": "Katak / کتک",
+    "Seed Type": "Fruity Prick"
+  },
+  {
+    "Scientific Taxon": "Woodfordia fruticosa",
+    "Name in Latin Script": "Dhavi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "2",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Ziziphus mauritiana",
+    "Name in Latin Script": "Ber",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "14",
+    "Distribution": "2",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Ziziphus nummularia",
+    "Name in Latin Script": "Malleh /Jhar Ber",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "2",
+    "Fruiting": "Po / پوہ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Balanites aegyptiaca",
+    "Name in Latin Script": "Hingot",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "3",
+    "Fruiting": "Haarh / ہاڑھ",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Calligonum po / پوہlygonoides",
+    "Name in Latin Script": "Phog",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "3",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Caroxylon imbricatum",
+    "Name in Latin Script": "Gora Laana /Hashok",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "2",
+    "Distribution": "3",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Commiphora wightii",
+    "Name in Latin Script": "Guggal",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "4",
+    "Distribution": "3",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Cordia sinesis",
+    "Name in Latin Script": "Goondi /Liyaar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "9",
+    "Distribution": "3",
+    "Fruiting": "Assu / اسو",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Dipterygium glaucum",
+    "Name in Latin Script": "Safrawi",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "3",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Euphorbia caducifolia",
+    "Name in Latin Script": "Danda Thohar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "3",
+    "Distribution": "3",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Euphorbia neriifolia",
+    "Name in Latin Script": "Thohar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "3",
+    "Fruiting": "Jeth / جیٹھ",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Haloxylon salicornicum",
+    "Name in Latin Script": "Desi Methar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "1",
+    "Distribution": "3",
+    "Fruiting": "Phaggann / پھگن",
+    "Seed Type": "Dry Prick"
+  },
+  {
+    "Scientific Taxon": "Salvadora persica",
+    "Name in Latin Script": "Pilu",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "6",
+    "Distribution": "3",
+    "Fruiting": "Bhadon / بھادون",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Senegalia senegal",
+    "Name in Latin Script": "Kumath",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "3",
+    "Fruiting": "Chet / چیت",
+    "Seed Type": "Dry Pebble"
+  },
+  {
+    "Scientific Taxon": "Aegiceras corniculatum",
+    "Name in Latin Script": "Halsi /Chawir /Kajid",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "7",
+    "Distribution": "4",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Avicennia marina",
+    "Name in Latin Script": "Timir /Tivar",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "5",
+    "Distribution": "4",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Ceriops tagal",
+    "Name in Latin Script": "Kirrari /Charui",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "4",
+    "Fruiting": "Saavann / ساؤن",
+    "Seed Type": "Fruity Pebble"
+  },
+  {
+    "Scientific Taxon": "Moringa concanensis",
+    "Name in Latin Script": "Kaura Sohanjna",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "4",
+    "Fruiting": "Magh / ماگھ",
+    "Seed Type": "Winged"
+  },
+  {
+    "Scientific Taxon": "Rhizophora mucronata",
+    "Name in Latin Script": "Kamo /Kunro /Bhora",
+    "in Nastaaliq script": null,
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "4",
+    "Fruiting": "Maggar / مگھر",
+    "Seed Type": "Fruity Stone"
+  },
+  {
+    "Scientific Taxon": "Thespesia populnea",
+    "Name in Latin Script": "Paras peepal ",
+    "in Nastaaliq script": "",
+    "in Gurumukhi script": "",
+    "Max. Height (m)": "10",
+    "Distribution": "4",
+    "Fruiting": "Vesaakh / وساکھ",
+    "Seed Type": "Dry Pebble"
+  }
+];
+
 const efloras = [
     {
         "query": "Thespesia populnea",
@@ -2142,3 +3665,17 @@ Object.keys(rlvnt.name).forEach((lang) => {
 document.querySelector("#potd2 > h4").innerHTML = document.querySelector("#potd2 > h4").innerHTML.slice(0, -2);
 document.querySelector("#potd2 > p").innerHTML = rlvnt.desc;
 document.querySelector("#potd2 > div").style.backgroundImage = `url(/plant_images/${rlvnt.result.replaceAll(" ", "%20")}.jpeg)`;
+
+
+const distributionMaps = {
+    "1": "//umap.openstreetmap.de/en/map/region-1_143999?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
+    "2": "//umap.openstreetmap.de/en/map/main_141850?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
+    "3": "//umap.openstreetmap.de/en/map/region-2-3_144003?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
+    "4": "//umap.openstreetmap.de/en/map/region-3_144001?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
+};
+
+const mapFinal = maps.find(plnt => plnt["Scientific Taxon"].toLowerCase() == (urlParams.get("g").toLowerCase() + " " + urlParams.get("s").toLowerCase()))["Distribution"];
+document.getElementById("map").src = distributionMaps[mapFinal];
+
+
+
