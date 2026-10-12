@@ -706,7 +706,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "1",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Dry Pebble"
   },
   {
@@ -736,7 +736,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "3",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Dry Prick"
   },
   {
@@ -776,7 +776,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "4",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Fruity Pebble"
   },
   {
@@ -1036,7 +1036,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "15",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Winged"
   },
   {
@@ -1136,7 +1136,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "8",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Fruity Pebble"
   },
   {
@@ -1146,7 +1146,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "8",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Fruity Pebble"
   },
   {
@@ -1296,7 +1296,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "4",
     "Distribution": "2",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Fruity Prick"
   },
   {
@@ -1446,7 +1446,7 @@ const maps = [
     "in Gurumukhi script": "",
     "Max. Height (m)": "6",
     "Distribution": "3",
-    "Fruiting": "Bhadon / بھادون",
+    "Fruiting": "Bhadon / بھادوں",
     "Seed Type": "Fruity Pebble"
   },
   {
@@ -3665,7 +3665,7 @@ Object.keys(rlvnt.name).forEach((lang) => {
 document.querySelector("#potd2 > h4").innerHTML = document.querySelector("#potd2 > h4").innerHTML.slice(0, -2);
 document.querySelector("#potd2 > p").innerHTML = rlvnt.desc;
 document.querySelector("#potd2 > div").style.backgroundImage = `url(/plant_images/${rlvnt.result.replaceAll(" ", "%20")}.jpeg)`;
-
+document.getElementById("importance").innerHTML = rlvnt.cultural_importance;
 
 const distributionMaps = {
     "1": "//umap.openstreetmap.de/en/map/region-1_143999?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
@@ -3674,8 +3674,14 @@ const distributionMaps = {
     "4": "//umap.openstreetmap.de/en/map/region-3_144001?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=false",
 };
 
-const mapFinal = maps.find(plnt => plnt["Scientific Taxon"].toLowerCase() == (urlParams.get("g").toLowerCase() + " " + urlParams.get("s").toLowerCase()))["Distribution"];
-document.getElementById("map").src = distributionMaps[mapFinal];
+const mapFinal = maps.find(plnt => plnt["Scientific Taxon"].toLowerCase() == (urlParams.get("g").toLowerCase() + " " + urlParams.get("s").toLowerCase()));
+document.getElementById("map").src = distributionMaps[mapFinal["Distribution"]];
 
+const season = mapFinal["Fruiting"].split("/")[0].trim().toLowerCase();
+document.querySelector(`[data-season="${season}"]`).classList.add("selected");
+document.querySelector(`[data-season="${season}"]`).innerHTML += `&nbsp;&nbsp;<i class="fas fa-arrow-right"></i> ` + mapFinal["Seed Type"];
+
+document.querySelectorAll(`[data-season="${season}"]`)[1].classList.add("selected");
+document.querySelectorAll(`[data-season="${season}"]`)[1].innerHTML += `&nbsp;&nbsp;<i class="fas fa-arrow-right"></i> ` + mapFinal["Seed Type"];
 
 
