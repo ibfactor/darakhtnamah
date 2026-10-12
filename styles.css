@@ -325,6 +325,9 @@ a:not(nav a, a:has(img)):hover {
 #potd2 > p:nth-of-type(1) a {
 	display: none;
 }
+#potd2 table {
+	display: none;
+}
 #potd2 li {
 	list-style: none;
 }
