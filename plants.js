@@ -2225,7 +2225,7 @@ const efloras = [
 avb_plants.forEach((plant, index) => {
     document.getElementById("rslt").innerHTML +=
         `<div class="plant_item" onclick="location.href='/plant?g=${plant.split("/")[0].split(" ")[0]}&s=${plant.split("/")[0].split(" ")[1]}';">
-            <div style="background-image:url(/plant_images/${plant.split("/")[0].replaceAll(" ", "%20")}.jpeg);"></div>
+            <div style="background-image:url(https://cdn.darakhtnamah.ibfr.org/plant_images/${plant.split("/")[0].replaceAll(" ", "%20")}.jpeg);"></div>
             <p>
                 ${plant.split("/")[0]}<br>
                 ${plant.split(plant.split("/")[0])[1].substr(1)}
@@ -2257,7 +2257,7 @@ function search() {
         
         document.getElementById("rslt").innerHTML +=
             `<div class="plant_item" onclick="location.href='/plant?g=${rlvnt.result.split(" ")[0]}&s=${rlvnt.result.split(" ")[1]}';">
-                <div style="background-image:url(/plant_images/${plant.split("/")[0].replaceAll(" ", "%20")}.jpeg);"></div>
+                <div style="background-image:url(https://cdn.darakhtnamah.ibfr.org/plant_images/${plant.split("/")[0].replaceAll(" ", "%20")}.jpeg);"></div>
                 <p>
                     ${plant.split("/")[0]}<br>
                     ${plant.split(plant.split("/")[0])[1].substr(1)}

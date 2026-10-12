@@ -3664,7 +3664,7 @@ Object.keys(rlvnt.name).forEach((lang) => {
 });
 document.querySelector("#potd2 > h4").innerHTML = document.querySelector("#potd2 > h4").innerHTML.slice(0, -2);
 document.querySelector("#potd2 > p").innerHTML = rlvnt.desc;
-document.querySelector("#potd2 > div").style.backgroundImage = `url(/plant_images/${rlvnt.result.replaceAll(" ", "%20")}.jpeg)`;
+document.querySelector("#potd2 > div").style.backgroundImage = `url(https://cdn.darakhtnamah.ibfr.org/plant_images/${rlvnt.result.replaceAll(" ", "%20")}.jpeg)`;
 document.getElementById("importance").innerHTML = rlvnt.cultural_importance;
 
 const distributionMaps = {
