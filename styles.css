@@ -23,7 +23,7 @@ button {
 .main {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 }
 
 video {
@@ -157,7 +157,7 @@ a {
 	opacity: 0.9;
 }
 #potd > div:nth-of-type(1) {
-	background-image: url("/plant_images/Bauhinia%20racemosa.jpeg");
+	background-image: url("http://cdn.darakhtnamah.ibfr.org/plant_images/Bauhinia%20racemosa.jpeg");
 	position: absolute;
 	width: 100%;
 	height: 100%;
