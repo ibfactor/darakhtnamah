@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&display=swap');
 
 html, body {
 	scroll-behavior: smooth;
@@ -270,13 +270,12 @@ a:not(nav a, a:has(img)):hover {
 
 
 #potd2 {
-	margin-top: 80px;
+	margin-top: 0px;
 	padding: 30px;
+	padding-top: 80px;
 	background-color: rgba(0, 54, 43);
-	width: calc(100% - 60px - 30px);
-	margin-left: 15px;
-	margin-right: 15px;
-	border-radius: 5px;
+	width: calc(100% - 60px);
+	border-radius: 0px;
 	position: relative;
 }
 #potd2 h4 {
@@ -352,3 +351,79 @@ a:not(nav a, a:has(img)):hover {
 	border-radius: 5px;
 }
 
+
+
+#map {
+	width: 100%;
+	height: 500px;
+	max-height: 500px;
+	min-height: 200px;
+	border: 0;
+}
+#mapd {
+	position: absolute;
+	padding: 15px;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+	width: calc(100% - 30px);
+	pointer-events: none;
+	margin-top: -0.5px;
+}
+#fade {
+	position: absolute;
+	background: linear-gradient(360deg,rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+	width: calc(100% + 60px);
+	height: 50px;
+	left: -30px;
+	bottom: -35px;
+	pointer-events: none;
+}
+#importanced {
+	padding: 15px;
+}
+.margin-top-less {
+	margin-top: -15px;
+}
+
+
+.seasons {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 60px);
+	padding: 30px;
+	font-family: "Noto Color Emoji", "Montserrat", "Gulzar";
+	table-layout: fixed;
+}
+.seasons td {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	padding-top: 8px;
+}
+
+.seasons tr:nth-last-of-type(1) td {
+	border-bottom: 0;
+}
+
+.seasons td span {
+	color: rgba(255, 255, 255, 0.3);
+	font-family: "Montserrat";
+	display: inline-block;
+	width: 25px;
+	text-align: center;
+}
+
+td.selected {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+@media screen and (min-width: 748px) {
+	.seasons:nth-of-type(2) {
+		display: none;
+	}
+}
+@media screen and (max-width: 748px) {
+	.seasons:nth-of-type(1) {
+		display: none;
+	}
+}
