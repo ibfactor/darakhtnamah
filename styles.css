@@ -130,7 +130,7 @@ a {
 	text-decoration: none;
 }
 
-#potd {
+/*#potd {
 	margin-top: 80px;
 	padding: 30px;
 	background-color: rgba(0, 54, 43);
@@ -138,6 +138,13 @@ a {
 	margin-left: 15px;
 	margin-right: 15px;
 	border-radius: 5px;
+	position: relative;
+} */
+#potd {
+	padding: 30px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	position: relative;
 }
 #potd h4 {
 	font-family: "Gulzar";
@@ -149,13 +156,37 @@ a {
 	position: absolute;
 	opacity: 0.9;
 }
+#potd > div:nth-of-type(1) {
+	background-image: url("/plant_images/Bauhinia%20racemosa.jpeg");
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(3px) brightness(50%);
+}
+#potd > div:nth-of-type(2) {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(360deg,rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+}
+#potd > *:not(div) {
+	position: relative;
+}
 #potd p {
 	margin-top: 10px;
 }
 
-#potd h4, #potd h2, #potd h5 {
+/*#potd h4, #potd h2, #potd h5 {
 	margin-left: 100px;
-}
+}*/
 
 hr {
 	border: 0.5px solid rgba(255, 255, 255, 0.2);
